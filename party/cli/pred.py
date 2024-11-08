@@ -207,7 +207,7 @@ def ocr(ctx, batch_size, input, batch_input, suffix, format_type,
 
 
     if not input:
-        raise click.UsageError('No inputs given with eihter `--input` or `--batch-input`')
+        raise click.UsageError('No inputs given with either `--input` or `--batch-input`')
 
     def _pred(input, output, model):
         if input_format_type != 'image':

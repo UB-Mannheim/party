@@ -134,7 +134,7 @@ class rpred(object):
         if bounds.type != net.seg_type:
             logger.warning(f'Recognizer with segmentation types {net.seg_type} will be '
                            f'applied to segmentation of type {bounds.type}. '
-                           f'This will likely result in severely degraded performace')
+                           f'This will likely result in severely degraded performance')
         if  net.one_channel_mode == '1' and not is_bitonal(im):
             logger.warning('Running binary models on non-binary input image '
                            f'(mode {im.mode}). This will result in severely degraded '
